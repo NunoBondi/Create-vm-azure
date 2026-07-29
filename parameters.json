@@ -1,0 +1,94 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "value": "westus3"
+    },
+    "tags": {
+      "value": {
+        "environment": "dev",
+        "workload": "virtual-machine",
+        "managedBy": "Bicep"
+      }
+    },
+    "vnetName": {
+      "value": "vnet-wus3-dev-01"
+    },
+    "subnetName": {
+      "value": "snet-vm-wus3-dev-01"
+    },
+    "nsgName": {
+      "value": "nsg-vm-wus3-dev-01"
+    },
+    "publicIpName": {
+      "value": "pip-vm-wus3-dev-01"
+    },
+    "nicName": {
+      "value": "nic-vm-wus3-dev-01"
+    },
+    "vmName": {
+      "value": "vm-w11-wus3-dev-01"
+    },
+    "computerName": {
+      "value": "vm-w11-dev-01"
+    },
+    "osDiskName": {
+      "value": "disk-os-wus3-dev-01"
+    },
+    "dataDiskName": {
+      "value": "disk-data-wus3-dev-01"
+    },
+    "adminUsername": {
+      "value": "azureadmin"
+    },
+    "adminPassword": {
+      "value": "REPLACE_WITH_A_SECURE_PASSWORD"
+    },
+    "vmSize": {
+      "value": "Standard_B2ms"
+    },
+    "vnetAddressSpace": {
+      "value": "10.10.0.0/16"
+    },
+    "subnetAddressSpace": {
+      "value": "10.10.1.0/24"
+    },
+    "rdpSourceAddressPrefix": {
+      "value": "Internet"
+    },
+    "rdpPort": {
+      "value": 3389
+    },
+    "rdpRulePriority": {
+      "value": 1000
+    },
+    "imagePublisher": {
+      "value": "MicrosoftWindowsDesktop"
+    },
+    "imageOffer": {
+      "value": "windows-11"
+    },
+    "imageSku": {
+      "value": "win11-24h2-pro"
+    },
+    "imageVersion": {
+      "value": "latest"
+    },
+    "osDiskStorageType": {
+      "value": "Premium_LRS"
+    },
+    "dataDiskStorageType": {
+      "value": "StandardSSD_LRS"
+    },
+    "dataDiskSizeGB": {
+      "value": 128
+    },
+    "secureBootEnabled": {
+      "value": true
+    },
+    "vTpmEnabled": {
+      "value": true
+    }
+  }
+}
